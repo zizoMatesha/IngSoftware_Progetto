@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentAnchorPane" prefHeight="870.0" prefWidth="1657.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.patientController">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="1311.0" style="-fx-background-color: #9cbdd3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="85.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="200.0" text="Paziente:" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="nomeCognomePaziente" prefHeight="70.0" prefWidth="200.0" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="71.0" prefWidth="1242.0">
+               <children>
+                  <Button fx:id="PrescriviFarmaco" layoutX="1070.0" layoutY="21.0" mnemonicParsing="false" onAction="#prescriviFarmaco" prefHeight="30.0" prefWidth="158.0" text="Prescrivi farmaco" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="22.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/50_113701.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="SomministraFarmaco" layoutX="1070.0" layoutY="21.0" mnemonicParsing="false" onAction="#somministraFarmaco" prefHeight="30.0" prefWidth="158.0" text="Somministra farmaci" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="22.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/50_113701.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="chiudiRicoveroButton" layoutX="907.0" layoutY="21.0" mnemonicParsing="false" onAction="#compileDischargeLetter" prefHeight="30.0" prefWidth="116.0" text="Chiusura ricovero" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </HBox>
+      <AnchorPane layoutY="71.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="792.0" prefWidth="1418.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <AnchorPane layoutX="90.0" layoutY="55.0">
+               <children>
+                  <ImageView fitHeight="279.0" fitWidth="572.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/vital.gif" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="468.0" layoutY="81.0" stroke="WHITE" strokeType="INSIDE" width="53.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="446.0" layoutY="166.0" stroke="WHITE" strokeType="INSIDE" width="43.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="503.0" layoutY="166.0" stroke="WHITE" strokeType="INSIDE" width="43.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="511.0" layoutY="231.0" stroke="WHITE" strokeType="INSIDE" width="43.0" />
+                  <Label fx:id="sys" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="437.0" layoutY="158.0" prefHeight="47.0" prefWidth="53.0" text="0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dias" layoutX="501.0" layoutY="159.0" prefHeight="47.0" prefWidth="53.0" text="0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="temp" alignment="CENTER" layoutX="503.0" layoutY="224.0" prefHeight="47.0" prefWidth="60.0" text="0" textFill="#a11f16">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="SpO2" alignment="CENTER" layoutX="451.0" layoutY="65.0" prefHeight="80.0" prefWidth="83.0" text="0" textFill="#53858a">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="42.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" layoutX="462.0" layoutY="14.0" stroke="WHITE" strokeType="INSIDE" width="66.0" />
+                  <Label fx:id="ecgField" alignment="CENTER" layoutX="451.0" layoutY="14.0" prefHeight="48.0" prefWidth="83.0" text="0" textFill="#a11f16">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="-36.0" prefHeight="45.0" prefWidth="309.0" text="Monitor parametri vitali" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorTemp" layoutX="4.0" layoutY="406.0" prefHeight="369.0" prefWidth="1619.0">
+               <children>
+                  <LineChart fx:id="tempChart" layoutX="18.0" layoutY="-6.0" prefHeight="356.0" prefWidth="1594.0">
+                    <xAxis>
+                      <CategoryAxis label="Orario misurazione" side="BOTTOM" fx:id="xaxis">
+                           <tickLabelFont>
+                              <Font size="10.0" />
+                           </tickLabelFont></CategoryAxis>
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="yaxis" forceZeroInRange="false" label="Temp" lowerBound="35.0" prefHeight="276.0" prefWidth="52.0" side="TOP" tickLength="10.0" upperBound="42.0" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorBP" layoutY="400.0" prefHeight="369.0" prefWidth="1619.0" visible="false">
+               <children>
+                  <LineChart fx:id="bloodPressureChart" layoutX="24.0" prefHeight="356.0" prefWidth="1594.0" stylesheets="@../css/myStyle.css">
+                     <xAxis>
+                        <CategoryAxis label="Orario misurazione" side="BOTTOM" fx:id="xaxis1" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis fx:id="yaxisBP" forceZeroInRange="false" label="Blood Press (%)" lowerBound="35.0" prefHeight="276.0" prefWidth="52.0" side="TOP" tickLength="10.0" upperBound="42.0" />
+                     </yAxis>
+                  </LineChart>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="923.0" layoutY="-4.0" prefHeight="381.0" prefWidth="630.0">
+               <children>
+                  <TableView fx:id="somministrazioniTable" layoutX="14.0" layoutY="58.0" prefHeight="273.0" prefWidth="602.0" />
+                  <Label layoutX="14.0" layoutY="30.0" prefHeight="14.0" prefWidth="280.0" text="Somministrazioni effettuate" textAlignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="buttonTemp" layoutX="207.0" layoutY="377.0" mnemonicParsing="false" onAction="#loadTempChart" text="Temperatura" />
+            <Button fx:id="buttonBP" layoutX="304.0" layoutY="377.0" mnemonicParsing="false" onAction="#loadBloodPressureChart" text="Pressiona sangue" />
+            <Label layoutX="84.0" layoutY="379.0" text="Seleziona grafico:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

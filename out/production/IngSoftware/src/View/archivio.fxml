@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="845.0" prefWidth="1602.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.archivioController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" minHeight="90.0" prefHeight="80.0" prefWidth="1313.0">
+               <children>
+                  <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" minHeight="100.0" prefHeight="180.0" prefWidth="1313.0" style="-fx-background-color: #9cbdd3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="68.0" prefWidth="764.0" text="Archivio delle cartelle cliniche chiuse" textFill="#1a5276" HBox.hgrow="NEVER">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="749.0" prefWidth="1496.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="cartelleClinicheTable" layoutX="25.0" layoutY="97.0" prefHeight="614.0" prefWidth="869.0" />
+                  <AnchorPane fx:id="letteraDimissioni" layoutX="957.0" layoutY="32.0" prefHeight="692.0" prefWidth="631.0" style="-fx-border-color: #1a5276;">
+                     <children>
+                        <AnchorPane layoutY="7.0" maxHeight="-Infinity" prefHeight="75.0" prefWidth="631.0" style="-fx-background-color: #1a5276;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="220.0" layoutY="21.0" text="Dati cartella clinica" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <VBox layoutX="1.0" layoutY="76.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+                           <children>
+                              <AnchorPane prefHeight="30.0" prefWidth="629.0">
+                                 <children>
+                                    <Label text="Paziente:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pazienteField" layoutX="90.0" layoutY="10.0" AnchorPane.topAnchor="10.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="30.0" prefWidth="629.0">
+                                 <children>
+                                    <Label text="Data fine ricovero:" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Data inizio ricovero:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dataInizioField" layoutX="168.0" layoutY="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dataFineField" layoutX="438.0" layoutY="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="209.0" prefWidth="629.0">
+                                 <children>
+                                    <TextArea fx:id="diagnosiDimissioneField" editable="false" layoutX="20.0" layoutY="31.0" prefHeight="159.0" prefWidth="573.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                                    <Label text="Diagnosi dimissione" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="167.0" prefWidth="629.0">
+                                 <children>
+                                    <TextArea fx:id="terapiaRicoveroField" editable="false" layoutX="20.0" layoutY="31.0" prefHeight="109.0" prefWidth="573.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                                    <Label text="Terapia praticata durante ricovero" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="167.0" prefWidth="629.0">
+                                 <children>
+                                    <TextArea fx:id="terapiaDomicilioField" editable="false" layoutX="20.0" layoutY="31.0" prefHeight="109.0" prefWidth="573.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                                    <Label text="Terapia a domicilio" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+                  <Label fx:id="errorLabel" layoutX="827.0" layoutY="711.0" prefHeight="31.0" prefWidth="493.0" textFill="RED" />
+                  <TextField fx:id="codSanitarioSearch" layoutX="26.0" layoutY="53.0" promptText="Codice sanitario paziente" />
+                  <TextField fx:id="nomePazienteSearch" layoutX="189.0" layoutY="53.0" prefHeight="25.0" prefWidth="149.0" promptText="Nome paziente" />
+                  <DatePicker fx:id="endDateSearch" layoutX="693.0" layoutY="53.0" prefHeight="25.0" prefWidth="155.0" promptText="Fine periodo" />
+                  <TextField fx:id="cognomePazienteSearch" layoutX="354.0" layoutY="53.0" prefHeight="25.0" prefWidth="149.0" promptText="Cognome paziente" />
+                  <DatePicker fx:id="startDateSearch" layoutX="521.0" layoutY="53.0" prefHeight="25.0" prefWidth="155.0" promptText="Inizio periodo" />
+                  <Button layoutX="859.0" layoutY="52.0" mnemonicParsing="false" onAction="#loadTableFiltered" prefHeight="25.0" prefWidth="29.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="19.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>desClass</OriginalElement>
+  <nodes>
+    <node x="593.5" y="1118.0">desClass.Main</node>
+    <node x="824.5" y="11.0">desClass.archivioController</node>
+    <node x="1275.5" y="282.0">desClass.allarmeController</node>
+    <node x="276.0" y="22.0">desClass.prescrizioneFarmacoController</node>
+    <node x="1043.5" y="271.0">desClass.insertRicoveroController</node>
+    <node x="0.0" y="1239.0">desClass.backup</node>
+    <node x="0.0" y="0.0">desClass.somministraFarmacoController</node>
+    <node x="575.5" y="756.0">desClass.loginPageController</node>
+    <node x="1047.5" y="44.0">desClass.addPatientController</node>
+    <node x="732.0" y="282.0">desClass.homeController</node>
+    <node x="532.5" y="520.0">desClass.staticPageController</node>
+    <node x="526.0" y="860.0">desClass.FirstController</node>
+    <node x="551.0" y="22.0">desClass.dischargeLetterController</node>
+    <node x="153.36538461538464" y="194.0">desClass.patientController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="desClass.staticPageController" target="desClass.insertRicoveroController" relationship="DEPENDENCY">
+      <point x="67.75" y="-93.0" />
+      <point x="735.75" y="499.0" />
+      <point x="983.5" y="499.0" />
+      <point x="983.5" y="489.0" />
+      <point x="1149.5" y="489.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="desClass.staticPageController" target="desClass.allarmeController" relationship="DEPENDENCY">
+      <point x="67.75" y="-93.0" />
+      <point x="735.75" y="499.0" />
+      <point x="983.5" y="499.0" />
+      <point x="983.5" y="489.0" />
+      <point x="1379.0" y="489.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="desClass.insertRicoveroController" target="desClass.addPatientController" relationship="DEPENDENCY">
+      <point x="0.0" y="-60.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="desClass.patientController" target="desClass.dischargeLetterController" relationship="DEPENDENCY">
+      <point x="0.0" y="-137.0" />
+      <point x="319.86538461538464" y="173.0" />
+      <point x="670.5" y="173.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="desClass.archivioController" target="desClass.staticPageController" relationship="DEPENDENCY">
+      <point x="0.0" y="60.0" />
+      <point x="918.0" y="173.0" />
+      <point x="983.5" y="173.0" />
+      <point x="983.5" y="499.0" />
+      <point x="735.75" y="499.0" />
+      <point x="67.75" y="-93.0" />
+    </edge>
+    <edge source="desClass.FirstController" target="desClass.loginPageController" relationship="DEPENDENCY">
+      <point x="0.0" y="-104.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="desClass.Main" target="desClass.FirstController" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="desClass.staticPageController" target="desClass.patientController" relationship="CREATE">
+      <point x="-67.75" y="-93.0" />
+      <point x="600.25" y="499.0" />
+      <point x="319.86538461538464" y="499.0" />
+      <point x="0.0" y="137.0" />
+    </edge>
+    <edge source="desClass.dischargeLetterController" target="desClass.staticPageController" relationship="DEPENDENCY">
+      <point x="0.0" y="49.0" />
+      <point x="670.5" y="489.0" />
+      <point x="983.5" y="489.0" />
+      <point x="983.5" y="499.0" />
+      <point x="735.75" y="499.0" />
+      <point x="67.75" y="-93.0" />
+    </edge>
+    <edge source="desClass.homeController" target="desClass.archivioController" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.0" />
+      <point x="852.5" y="173.0" />
+      <point x="918.0" y="173.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="desClass.staticPageController" target="desClass.homeController" relationship="DEPENDENCY">
+      <point x="67.75" y="-93.0" />
+      <point x="735.75" y="499.0" />
+      <point x="983.5" y="499.0" />
+      <point x="983.5" y="489.0" />
+      <point x="852.5" y="489.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="desClass.homeController" target="desClass.staticPageController" relationship="DEPENDENCY">
+      <point x="0.0" y="49.0" />
+      <point x="852.5" y="489.0" />
+      <point x="983.5" y="489.0" />
+      <point x="983.5" y="499.0" />
+      <point x="735.75" y="499.0" />
+      <point x="67.75" y="-93.0" />
+    </edge>
+    <edge source="desClass.loginPageController" target="desClass.staticPageController" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="desClass.patientController" target="desClass.somministraFarmacoController" relationship="DEPENDENCY">
+      <point x="0.0" y="-137.0" />
+      <point x="319.86538461538464" y="163.0" />
+      <point x="128.0" y="163.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="desClass.patientController" target="desClass.prescrizioneFarmacoController" relationship="DEPENDENCY">
+      <point x="0.0" y="-137.0" />
+      <point x="319.86538461538464" y="163.0" />
+      <point x="403.5" y="163.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6809006211180124" showDependencies="true" x="741.5" y="634.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>packageLocal</VISIBILITY>
+</Diagram>
+

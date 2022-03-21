@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>E:/Users/david/IdeaProjects/IngSoftware/src</OriginalElement>
+  <nodes>
+    <node x="1321.0" y="1170.0">desClass.Main</node>
+    <node x="735.0" y="1004.0">desClass.archivioController</node>
+    <node x="570.0" y="1170.0">desClass.allarmeController</node>
+    <node x="249.0" y="1313.0">srcClass.sistemaMonitoraggio</node>
+    <node x="1211.0" y="1004.0">desClass.prescrizioneFarmacoController</node>
+    <node x="478.0" y="1004.0">desClass.insertRicoveroController</node>
+    <node x="1081.0" y="474.0">srcClass.Prescrizione</node>
+    <node x="822.0" y="1170.0">srcClass.CodFiscale</node>
+    <node x="0.0" y="1313.0">desClass.addPatientController</node>
+    <node x="1179.0" y="148.0">srcClass.Infermiere</node>
+    <node x="535.0" y="474.0">srcClass.Paziente</node>
+    <node x="718.0" y="1313.0">sistemaMonitoraggio.starter</node>
+    <node x="214.0" y="772.0">desClass.staticPageController</node>
+    <node x="1333.0" y="148.0">srcClass.Medico</node>
+    <node x="0.0" y="0.0">db.DataBase</node>
+    <node x="241.0" y="474.0">sistemaMonitoraggio.ServeClient</node>
+    <node x="0.0" y="1004.0">sistemaMonitoraggio.monitorStanza</node>
+    <node x="0.0" y="772.0">srcClass.parametriVitali</node>
+    <node x="752.0" y="474.0">desClass.FirstController</node>
+    <node x="1061.0" y="772.0">srcClass.Somministrazione</node>
+    <node x="760.0" y="772.0">desClass.somministraFarmacoController</node>
+    <node x="488.0" y="1313.0">desClass.loginPageController</node>
+    <node x="967.0" y="1004.0">sistemaMonitoraggio.dataBaseForMonitor</node>
+    <node x="1318.0" y="474.0">util.KTimer</node>
+    <node x="923.0" y="0.0">srcClass.prescrizioneForTable</node>
+    <node x="912.0" y="1313.0">sistemaMonitoraggio.ServerCentrale</node>
+    <node x="1000.0" y="1170.0">sistemaMonitoraggio.DataGen</node>
+    <node x="0.0" y="1170.0">desClass.homeController</node>
+    <node x="1241.0" y="0.0">srcClass.LoggedUser</node>
+    <node x="530.0" y="772.0">srcClass.Farmaco</node>
+    <node x="288.0" y="1004.0">srcClass.Alarm</node>
+    <node x="286.0" y="1170.0">desClass.dischargeLetterController</node>
+    <node x="0.0" y="474.0">srcClass.Ricovero</node>
+    <node x="545.0" y="0.0">desClass.patientController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="srcClass.Infermiere" target="srcClass.LoggedUser" relationship="GENERALIZATION">
+      <point x="0.0" y="-60.0" />
+      <point x="1246.0" y="123.0" />
+      <point x="1323.0" y="123.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="srcClass.Medico" target="srcClass.LoggedUser" relationship="GENERALIZATION">
+      <point x="0.0" y="-60.0" />
+      <point x="1400.0" y="123.0" />
+      <point x="1323.0" y="123.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6322999279019467" showDependencies="false" x="762.5" y="683.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

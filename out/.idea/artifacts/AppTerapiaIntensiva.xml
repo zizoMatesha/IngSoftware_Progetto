@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="AppTerapiaIntensiva">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="root">
+      <element id="module-source" name="IngSoftware" />
+    </root>
+  </artifact>
+</component>

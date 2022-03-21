@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.07480314960629922" orientation="VERTICAL" prefHeight="510.0" prefWidth="782.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="780.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="118.0" text="Infermiere" textAlignment="CENTER" textFill="#289de1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ButtonBar prefHeight="35.0" prefWidth="662.0">
+                          <buttons>
+                              <Button mnemonicParsing="false" text="Boo" />
+                            <Button mnemonicParsing="false" text="Nuovo Ricovero" />
+                              <Button mnemonicParsing="false" text="Logout" />
+                          </buttons>
+                        </ButtonBar>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.15512820512820513" prefHeight="467.0" prefWidth="782.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="484.0" prefWidth="118.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="508.0" prefWidth="671.0" />
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

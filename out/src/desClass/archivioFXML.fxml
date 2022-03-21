@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="823.0" prefWidth="1496.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desClass.archivioController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" minHeight="90.0" prefHeight="80.0" prefWidth="1313.0">
+               <children>
+                  <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" minHeight="100.0" prefHeight="180.0" prefWidth="1313.0" style="-fx-background-color: #9cbdd3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="68.0" prefWidth="764.0" text="Archivio delle cartelle cliniche chiuse" textFill="#1a5276" HBox.hgrow="NEVER">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="735.0" prefWidth="1496.0">
+               <children>
+                  <TableView fx:id="cartelleClinicheTable" layoutX="25.0" layoutY="19.0" prefHeight="692.0" prefWidth="697.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

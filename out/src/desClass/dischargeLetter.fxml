@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="933.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desClass.dischargeLetterController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="1090.0" prefWidth="1209.0" AnchorPane.bottomAnchor="-124.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="1208.0" style="-fx-background-color: #9cbdd3;">
+               <children>
+                  <ImageView fx:id="confermaLettera" fitHeight="37.0" fitWidth="37.0" layoutX="1084.0" layoutY="10.0" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="87.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@../img/conferma.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" prefHeight="56.0" prefWidth="387.0" text="Compila tutti i campi della lettera di dimissioni">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="1144.0" layoutY="9.0" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="9.0">
+                     <image>
+                        <Image url="@../img/closeIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane maxWidth="-Infinity" prefHeight="877.0" prefWidth="1206.0" style="-fx-background-color: black;" VBox.vgrow="ALWAYS">
+               <children>
+                  <ScrollPane focusTraversable="false" prefHeight="1082.0" prefWidth="1209.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane fx:id="contPane" prefHeight="1215.0" prefWidth="1196.0">
+                           <children>
+                              <ImageView fitHeight="1691.0" fitWidth="1197.0" layoutX="4.0" layoutY="4.0" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <image>
+                                    <Image url="@../img/LetteraDimissioni_page-0001.jpg" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="pazienteFieldFXML" layoutX="349.0" layoutY="368.0" prefHeight="31.0" prefWidth="728.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></TextField>
+                              <TextField fx:id="uoFieldFXML" layoutX="232.0" layoutY="495.0" prefHeight="31.0" prefWidth="681.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></TextField>
+                              <TextField fx:id="dataFineRicFXML" layoutX="364.0" layoutY="543.0" prefHeight="31.0" prefWidth="169.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></TextField>
+                              <TextField fx:id="dataInizioRicFXML" layoutX="146.0" layoutY="543.0" prefHeight="31.0" prefWidth="172.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></TextField>
+                              <TextArea fx:id="accertamentiFXML" layoutX="113.0" layoutY="668.0" prefHeight="174.0" prefWidth="970.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets top="50.0" />
+                                 </opaqueInsets></TextArea>
+                              <TextArea fx:id="terapiaFXML" layoutX="113.0" layoutY="875.0" prefHeight="118.0" prefWidth="969.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextArea>
+                              <TextArea fx:id="diagnosiFXML" layoutX="113.0" layoutY="1025.0" prefHeight="113.0" prefWidth="970.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextArea>
+                              <TextArea fx:id="terapiaDomicilioFXML" layoutX="113.0" layoutY="1171.0" prefHeight="126.0" prefWidth="973.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextArea>
+                              <TextField fx:id="numTelefonicoFXML" layoutX="552.0" layoutY="1387.0" prefHeight="31.0" prefWidth="529.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></TextField>
+                              <TextField fx:id="dataOdiernaFXML" layoutX="162.0" layoutY="1520.0" prefHeight="31.0" prefWidth="170.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></TextField>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

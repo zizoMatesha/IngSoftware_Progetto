@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="751.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desClass.somministraFarmacoController">
+   <children>
+      <VBox prefHeight="697.0" prefWidth="1085.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="73.0" prefWidth="998.0" style="-fx-background-color: #1a5276;">
+               <children>
+                  <Label layoutX="432.0" layoutY="20.0" text="Somministra farmaco" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="679.0" prefWidth="1181.0">
+               <children>
+                  <AnchorPane prefHeight="684.0" prefWidth="1193.0">
+                     <children>
+                        <VBox layoutX="65.0" layoutY="48.0" prefHeight="335.0" prefWidth="960.0">
+                           <children>
+                              <TableView fx:id="listaPrescrizioni" prefHeight="335.0" prefWidth="856.0" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <AnchorPane fx:id="confermaPane" layoutY="444.0" prefHeight="236.0" prefWidth="1181.0" style="-fx-background-color: #1a5276;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="23.0" prefHeight="227.0" prefWidth="1128.0">
+                                 <children>
+                                    <DatePicker fx:id="dataSommField" editable="false" layoutX="14.0" layoutY="79.0" prefHeight="25.0" prefWidth="149.0" />
+                                    <TextField fx:id="doseSomm" layoutX="360.0" layoutY="77.0" prefHeight="25.0" prefWidth="149.0" />
+                                    <TextField fx:id="farmacoField" editable="false" layoutX="14.0" layoutY="145.0" prefHeight="25.0" prefWidth="523.0" />
+                                    <Label layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="164.0" text="Infermiere responsabile: " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="confimButton" fitHeight="39.0" fitWidth="43.0" layoutX="1089.0" layoutY="107.0" onMouseClicked="#confermaSomministrazione" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/blue-arrow-button-png.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Label fx:id="infermiereRespLabel" layoutX="178.0" layoutY="14.0" prefHeight="39.0" prefWidth="208.0" textFill="#f85252">
+                                       <font>
+                                          <Font name="System Bold Italic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="56.0" prefHeight="25.0" prefWidth="134.0" text="Data somministrazione" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="360.0" layoutY="55.0" prefHeight="25.0" prefWidth="134.0" text="Dose somministrata" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="730.0" layoutY="52.0" prefHeight="25.0" prefWidth="134.0" text="Note stato paziente" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="122.0" prefHeight="25.0" prefWidth="134.0" text="Nome farmaco" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="469.0" layoutY="14.0" prefHeight="39.0" prefWidth="231.0" text="Paziente: " textAlignment="RIGHT" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pazienteLabel" layoutX="700.0" layoutY="14.0" prefHeight="39.0" prefWidth="246.0" textFill="#6ec36f" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="prescCod" editable="false" layoutX="561.0" layoutY="77.0" prefHeight="25.0" prefWidth="149.0" />
+                                    <Label layoutX="561.0" layoutY="55.0" prefHeight="25.0" prefWidth="134.0" text="Numero prescrizione" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="codFarmacoField" editable="false" layoutX="562.0" layoutY="144.0" prefHeight="25.0" prefWidth="149.0" />
+                                    <Label layoutX="562.0" layoutY="121.0" prefHeight="25.0" prefWidth="134.0" text="Codice farmaco" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea fx:id="notePaziente" layoutX="730.0" layoutY="76.0" prefHeight="101.0" prefWidth="338.0" />
+                                    <TextField fx:id="momentoSomm" layoutX="201.0" layoutY="78.0" prefHeight="25.0" prefWidth="109.0" />
+                                    <Label layoutX="202.0" layoutY="55.0" prefHeight="25.0" prefWidth="115.0" text="Momento (hh:mm)" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="errorLabel" layoutX="14.0" layoutY="185.0" prefHeight="25.0" prefWidth="696.0">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="65.0" layoutY="383.0" prefHeight="25.0" prefWidth="231.0" text="Click sulla prescrizione per selezionarla" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
